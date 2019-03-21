@@ -1,16 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import "./styles.css";
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Event handling...</h1>
-      <h2>Элементраная обработка событий.</h2>
-    </div>
-  );
-}
+import App from "./app";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);

@@ -1,9 +1,17 @@
 import React from "react";
 
-export default class Item extends React.Component {
-  onLabelClick = () => console.log(`It's ${name}`);
+const Item = ({ someProps }) => {
+  onLabelClick = () => console.log(`It's ${this.name}`);
 
-  render() {
-    return 1;
-  }
-}
+  const element = someProps.map(item => {
+    const { id, ...itemProps } = item;
+    return (
+      <li key={id} className="list-group-item">
+        {this.name}
+      </li>
+    );
+  });
+
+  return <ul>{element}</ul>;
+};
+export default Item;

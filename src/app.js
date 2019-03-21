@@ -12,7 +12,7 @@ export default class App extends React.Component {
     <div className="App">
       <h1>Event handling...</h1>
       <h2>Элементраная обработка событий.</h2>
-      <Item />
+      <Item someProps={this.state.someData} />
     </div>;
   }
 }

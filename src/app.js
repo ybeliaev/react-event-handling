@@ -9,10 +9,10 @@ export default class App extends React.Component {
     ]
   };
   render() {
-    <div className="App">
-      <h1>Event handling...</h1>
-      <h2>Элементраная обработка событий.</h2>
-      <Item someProps={this.state.someData} />
-    </div>;
+    return (
+      <div className="app">
+        <Item someProps={this.state.someData} />
+      </div>
+    );
   }
 }

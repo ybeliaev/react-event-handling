@@ -1,12 +1,11 @@
 import React from "react";
 
 const Item = ({ someProps }) => {
-  //   onLabelClick = () => console.log(`It's ${this.name}`);
-
+  // const onItemClick = ()=>console.log(123);
   const element = someProps.map(item => {
     const { id, name, age } = item;
     return (
-      <li key={id} className="list-group-item">
+      <li key={id} onClick={() => console.log(name)}>
         Name: {name}, age: {age}
       </li>
     );
